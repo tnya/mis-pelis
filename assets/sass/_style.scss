@@ -1,1 +1,165 @@
+/* BURGER */
 
+/* WELCOME */
+
+/*NOTA: & sirve para anidar classes or id q estan
+dentro una de la otra. En este caso, por ej
+*/
+.container{
+	&.welcome{
+		background:$tomato;
+		width:100%;
+		height:100vh;
+		padding: 106px 25px;
+	}
+	h2{
+		font-family:$font-anton;
+		color:$white;
+		font-size: 5em;
+	}
+}
+
+.btn-welcome{
+  padding-top: 38px;
+  font-family:$font-nunito;
+  margin-right: 17px;
+		button{
+			background:$white;
+			color:$tomato;
+			padding:5px;
+			width:100%;
+			margin: 10px;
+			font-weight: 500;
+			font-size: 16px;
+			letter-spacing: $spacing;
+		}
+		p{
+			color:$white;
+			text-align:$center;
+			margin:15px;
+			letter-spacing: $spacing;
+		}
+}
+
+/* CREATE ACCOUNT */
+
+.container{
+	&.account{
+		background:$grey;
+		width:100%;
+		height:100vh;
+		padding: 98px 40px;
+	}
+}
+
+.input{
+	padding: 10px;
+}
+input{
+	padding:18px;
+}
+label{
+	color:$burgundy;
+	letter-spacing:$spacing;
+	font-family:$font-nunito;
+	font-weight:lighter;
+}
+
+.btn{
+	font-family:$font-nunito;
+	background: $dark-grey;
+	letter-spacing: 1px;
+	color: $white;
+	font-weight: lighter;
+	padding: 10px 79px;
+	margin:22px;
+	border: none;
+}
+
+/* DETAILS */
+.container{
+	font-family: $font-nunito;
+	&.main-photo{
+		width:100%;
+		height:100vh;
+		background: url('../img/pulpfiction.jpg');
+		background-position:center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&.text-movie{
+		padding: 5px;
+	}
+}
+.watch{
+	background: $tomato;
+  height: 53px;
+  p{
+  	color:$white;
+  	letter-spacing:$spacing;
+  	font-weight:light;
+  	padding: 14px 0 0 10px
+  }
+  span{
+  	color:$white;
+  	&.fa-angle-right{
+  		padding: 10px;
+  		margin-left: 10px;
+  	}
+  }
+}
+
+.btn {
+  background: $tomato;
+  padding: 10px 11px;
+  font-size: 10px;
+  margin: 22px;
+  border: none;
+  color:$white;
+  margin-left: 48px;
+}
+.stars {
+  padding: 30px;
+  margin-left: -15px;
+  letter-spacing: 2px;
+}
+
+.starring{
+	p{
+	/*	margin: 0 0 -16px;*/
+		font-size: 12px;
+		letter-spacing:$spacing;
+	}
+	li{
+		margin: -7px;
+	}
+}
+/* ACTOR */
+
+.container{
+	&.name {
+    background: $tomato;
+    height: 341px;
+    text-align: $center;
+    font-family: $font-nunito;
+    color: $white;
+    font-size: 2em;
+    letter-spacing: $spacing;
+    padding-top: 195px;
+  }
+}
+
+ul {
+	font-size: 10px;
+	list-style: none;
+	/* letter-spacing: 1px; */
+	color: $gray;
+	font-family: $font-nunito;
+	line-height: 25px;
+	padding: 6px;
+	margin: 10px;
+	margin-right: -9px;
+		&.ul-right {
+    margin-left: -8px;
+	}
+}
